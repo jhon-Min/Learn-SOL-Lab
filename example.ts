@@ -10,7 +10,5 @@ const address = new PublicKey('CenYq6bDRB7p73EjsPEpiYN7uveyPUTdXkDkgUduboaN');
 const balance = await connection.getBalance(address);
 const balanceInSol = balance / LAMPORTS_PER_SOL;
 
-console.log(
-  `The balance of the account at ${address} is ${balanceInSol} lamports`
-);
+console.log(`The balance of the account at ${address} is ${balanceInSol} sol`);
 console.log(`✅ Finished!`);
